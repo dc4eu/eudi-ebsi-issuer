@@ -100,7 +100,7 @@ class ConfCountries:
             "oidc_auth": {
                 "base_url": "http://192.168.1.111",
                 "url": "http://192.168.1.111/oidc/authorization?",
-                "redirect_uri": "https://192.168.1.111:5000/dynamic/redirect",
+                "redirect_uri": "https://snf-74864.ok-kno.grnetcloud.net:8000/dynamic/redirect",
                 "scope": "eu.europa.ec.eudi.pid.1",
                 "response_type": "code",
                 "client_id": "eudiw_login",
@@ -117,7 +117,7 @@ class ConfCountries:
                     "Authorization": "Basic ZXVfZXVyb3BhX2VjX2V1ZGl3X3BpZF9wcm92aWRlcl8xX3BwcjpINUVpVjdPaGZMTUs1TFBvcXB0NG5WT1FJeEdicEZ3MQ==",
                 },
                 "grant_type": "authorization_code",
-                "redirect_uri": "https://192.168.1.111:5000/dynamic/redirect",
+                "redirect_uri": "https://snf-74864.ok-kno.grnetcloud.net:8000/dynamic/redirect",
             },
         },
         "PT": {

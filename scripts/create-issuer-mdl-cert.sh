@@ -25,6 +25,7 @@ C = GR
 
 [ v3_ca ]
 basicConstraints = CA:FALSE
+subjectAltName = DNS:https://snf-74864.ok-kno.grnetcloud.net:8000
 subjectKeyIdentifier = hash
 authorityKeyIdentifier = keyid,issuer:always
 extendedKeyUsage = 1.0.18013.5.1.2
