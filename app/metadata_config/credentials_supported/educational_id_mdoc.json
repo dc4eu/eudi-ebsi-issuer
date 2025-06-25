@@ -49,7 +49,7 @@
         ],
         "claims": {
           "eu.europa.ec.eudi.educational_id.1": {
-            "educational_id_number": {
+            "id": {
               "mandatory": true,
               "value_type":"string",
               "source":"user",
@@ -59,13 +59,33 @@
                   "locale": "en"            }
               ]
             },
-            "educational_id_identifier": {
+            "identifier": {
               "mandatory": true,
               "value_type":"string",
               "source":"user",
               "display": [
                 {
                   "name": "Educational ID identifier",
+                  "locale": "en"            }
+              ]
+            },
+            "schacPersonalUniqueCode": {
+              "mandatory": false,
+              "value_type":"array",
+              "source":"user",
+              "display": [
+                {
+                  "name": "schacPersonalUniqueCode can have different forms urn:schac:personalUniqueCode:int:esi:<sHO>:<code> (where <sHO> is the Higher Education Institution's schacHomeOrganization) and urn:schac:personalUniqueCode:int:esi:<country-code>:<code> (<code> is a string that uniquely identifies the person).",
+                  "locale": "en"            }
+              ]
+            },
+            "schacPersonalUniqueID": {
+              "mandatory": false,
+              "value_type":"string",
+              "source":"user",
+              "display": [
+                {
+                  "name": "value is different in different countries, mostly urn:schac:personalUniqueID:<country-code>:<code>.",
                   "locale": "en"            }
               ]
             },
@@ -152,7 +172,7 @@
             },
             "eduPersonAffiliation": {
               "mandatory": false,
-              "value_type":"string",
+              "value_type":"array",
               "source":"user",
               "display": [
                 {
@@ -162,7 +182,7 @@
             },
             "eduPersonScopedAffiliation": {
               "mandatory": true,
-              "value_type":"string",
+              "value_type":"array",
               "source":"user",
               "display": [
                 {
@@ -172,7 +192,7 @@
             },
             "eduPersonAssurance": {
               "mandatory": false,
-              "value_type":"string",
+              "value_type":"array",
               "source":"user",
               "display": [
                 {
