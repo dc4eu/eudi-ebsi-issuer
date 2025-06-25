@@ -1,8 +1,8 @@
 {
-    "eu.europa.ec.eudi.educational_id_mdoc": {
+    "eu.europa.ec.eudi.my_academic_id_mdoc": {
         "format": "mso_mdoc",
-        "doctype": "eu.europa.ec.eudi.educational_id.1",
-        "scope": "eu.europa.ec.eudi.educational_id.1",
+        "doctype": "eu.europa.ec.eudi.my_academic_id.1",
+        "scope": "eu.europa.ec.eudi.my_academic_id.1",
         "policy": {
             "batch_size": 50,
             "one_time_use": true
@@ -39,68 +39,88 @@
         },
         "display": [
           {
-            "name": "Verifiable Educational ID",
+            "name": "MyAcademicId",
             "locale": "en",
             "logo": {
-              "uri": "https://examplestate.com/public/educational_ID.png",
-              "alt_text": "A square figure of a educational ID"
+              "uri": "https://examplestate.com/public/my_academic_ID.png",
+              "alt_text": "A square figure of a MyAcademicId"
             }
           }
         ],
         "claims": {
-          "eu.europa.ec.eudi.educational_id.1": {
+          "eu.europa.ec.eudi.my_academic_id.1": {
             "id": {
               "mandatory": true,
               "value_type":"string",
               "source":"user",
               "display": [
                 {
-                  "name": "Educational ID",
+                  "name": "MyAcademicId",
                   "locale": "en"            }
               ]
             },
-            "identifier": {
+            "communityUserIdentifier": {
               "mandatory": true,
               "value_type":"string",
               "source":"user",
               "display": [
                 {
-                  "name": "Educational ID identifier",
+                  "name": "Community Identifier",
                   "locale": "en"            }
               ]
             },
-            "schacPersonalUniqueCode": {
+            "europeanStudentIdentifier": {
               "mandatory": false,
               "value_type":"array",
               "source":"user",
               "display": [
                 {
-                  "name": "schacPersonalUniqueCode can have different forms urn:schac:personalUniqueCode:int:esi:<sHO>:<code> (where <sHO> is the Higher Education Institution's schacHomeOrganization) and urn:schac:personalUniqueCode:int:esi:<country-code>:<code> (<code> is a string that uniquely identifies the person).",
+                  "name": "European Student Identifier (ESI)",
                   "locale": "en"            }
               ]
             },
-            "schacPersonalUniqueID": {
+            "externalAffiliation": {
+              "mandatory": false,
+              "value_type":"array",
+              "source":"user",
+              "display": [
+                {
+                  "name": "Affiliation within Home Organization ",
+                  "locale": "en"            }
+              ]
+            },
+            "organization": {
               "mandatory": false,
               "value_type":"string",
               "source":"user",
               "display": [
                 {
-                  "name": "value is different in different countries, mostly urn:schac:personalUniqueID:<country-code>:<code>.",
+                  "name": "Organization",
                   "locale": "en"            }
               ]
             },
-            "schacHomeOrganization": {
-              "mandatory": false,
+            "displayName": {
+              "mandatory": true,
               "value_type":"string",
               "source":"user",
               "display": [
                 {
-                  "name": "Educational institution name",
+                  "name": "Firstname Lastname",
+                  "locale": "en"            }
+              ]
+            },
+            "givenName": {
+              "mandatory": true,
+              "value_type":"string",
+              "source":"user",
+              "display": [
+                {
+                  "name": "Strings part of a person's name that is not their surname",
                   "locale": "en"            }
               ]
             },
             "family_name": {
-              "mandatory": false,
+              "mandatory": true,
               "value_type":"string",
               "source":"user",
               "display": [
@@ -109,39 +129,8 @@
                   "locale": "en"            }
               ]
             },
-            "displayName": {
-              "mandatory": false,
-              "value_type":"string",
-              "source":"user",
-              "display": [
-                {
-                  "name": "Preferred name to display",
-                  "locale": "en"            }
-              ]
-            },
-            "dateOfBirth": {
-              "mandatory": false,
-              "value_type":"full-date",
-              "source":"user",
-              "display": [
-                {
-                  "name": "Birth Date",
-                  "locale": "en"
-                }
-              ]
-            },
-            "commonName": {
-              "mandatory": false,
-              "value_type":"string",
-              "source":"user",
-              "display": [
-                {
-                  "name": "Birth names of the person",
-                  "locale": "en"            }
-              ]
-            },
-            "mail": {
-              "mandatory": false,
+            "emailAddress": {
+              "mandatory": true,
               "value_type":"string",
               "source":"user",
               "display": [
@@ -150,53 +139,23 @@
                   "locale": "en"            }
               ]
             },
-            "eduPersonPrincipalName": {
-              "mandatory": false,
-              "value_type":"string",
-              "source":"issuer",
-              "display": [
-                {
-                  "name": "A persistent identifier within the institution",
-                  "locale": "en"            }
-              ]
-            },
-            "eduPersonPrimaryAffiliation": {
-              "mandatory": false,
-              "value_type":"string",
-              "source":"user",
-              "display": [
-                {
-                  "name": "Main role at the institution",
-                  "locale": "en"            }
-              ]
-            },
-            "eduPersonAffiliation": {
+            "entitlements": {
               "mandatory": false,
               "value_type":"array",
               "source":"user",
               "display": [
                 {
-                  "name": "List of all roles (student, staff, etc.)",
+                  "name": "User's entitlements",
                   "locale": "en"            }
               ]
             },
-            "eduPersonScopedAffiliation": {
+            "assurance": {
               "mandatory": true,
               "value_type":"array",
               "source":"user",
               "display": [
                 {
-                  "name": "Roles with institutional context",
-                  "locale": "en"            }
-              ]
-            },
-            "eduPersonAssurance": {
-              "mandatory": false,
-              "value_type":"array",
-              "source":"user",
-              "display": [
-                {
-                  "name": "Identity assurance levels meeting REFEDS framework standards",
+                  "name": "Assurance of the identity of the user, following REFEDS Assurance Framework (RAF)",
                   "locale": "en"            }
               ]
             }
