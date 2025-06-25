@@ -81,6 +81,8 @@ class ConfCountries:
                 "eu.europa.ec.eudi.tax_mdoc",
                 "eu.europa.ec.eudi.msisdn_mdoc",
                 "eu.europa.ec.eudi.educational_id_mdoc",
+                "eu.europa.ec.eudi.alliance_id_mdoc",
+                "eu.europa.ec.eudi.my_academic_id_mdoc",
             ],
             "dynamic_R2": cfgserv.service_url + "dynamic/form_R2",
         },

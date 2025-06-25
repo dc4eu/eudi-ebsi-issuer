@@ -359,6 +359,20 @@ class ConfService:
             "organization_name": "Test QEAA issuer",
             "namespace": "eu.europa.ec.eudi.educational_id.1",
         },
+        "eu.europa.ec.eudi.alliance_id.1": {
+            "issuing_authority": "Test QEAA issuer",
+            "organization_id": pid_organization_id,
+            "validity": qeaa_validity,
+            "organization_name": "Test QEAA issuer",
+            "namespace": "eu.europa.ec.eudi.alliance_id.1",
+        },
+        "eu.europa.ec.eudi.my_academic_id.1": {
+            "issuing_authority": "Test QEAA issuer",
+            "organization_id": pid_organization_id,
+            "validity": qeaa_validity,
+            "organization_name": "Test QEAA issuer",
+            "namespace": "eu.europa.ec.eudi.my_academic_id.1",
+        },
     }
 
     auth_method_supported_credencials = {
@@ -371,6 +385,8 @@ class ConfService:
             "eu.europa.ec.eudi.tax_mdoc",
             "eu.europa.ec.eudi.msisdn_mdoc",
             #"eu.europa.ec.eudi.educational_id_mdoc", 
+            #"eu.europa.ec.eudi.alliance_id_mdoc", 
+            #"eu.europa.ec.eudi.my_academic_id_mdoc", 
         ],
         "country_selection": [
             "eu.europa.ec.eudi.loyalty_mdoc",
@@ -387,6 +403,8 @@ class ConfService:
             "eu.europa.ec.eudi.msisdn_mdoc",
             "eu.europa.ec.eudi.ehic_mdoc",
             #"eu.europa.ec.eudi.educational_id_mdoc",
+            #"eu.europa.ec.eudi.alliance_id_mdoc",
+            #"eu.europa.ec.eudi.my_academic_id_mdoc",
         ],
     }
 
@@ -463,6 +481,30 @@ class ConfService:
             }
         },
         "eu.europa.ec.eudi.educational_id_mdoc": {
+            "eu.europa.ec.eudi.pid.1": {
+                "eu.europa.ec.eudi.pid.1": [
+                    "family_name",
+                    "given_name",
+                    "birth_date",
+                    "age_over_18",
+                    "issuing_authority",
+                    "issuing_country",
+                ]
+            }
+        },
+        "eu.europa.ec.eudi.alliance_id_mdoc": {
+            "eu.europa.ec.eudi.pid.1": {
+                "eu.europa.ec.eudi.pid.1": [
+                    "family_name",
+                    "given_name",
+                    "birth_date",
+                    "age_over_18",
+                    "issuing_authority",
+                    "issuing_country",
+                ]
+            }
+        },
+        "eu.europa.ec.eudi.my_academic_id_mdoc": {
             "eu.europa.ec.eudi.pid.1": {
                 "eu.europa.ec.eudi.pid.1": [
                     "family_name",
