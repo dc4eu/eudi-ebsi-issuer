@@ -71,7 +71,7 @@
             },
             "europeanStudentIdentifier": {
               "mandatory": false,
-              "value_type":"array",
+              "value_type": "string",
               "source":"user",
               "display": [
                 {
@@ -81,7 +81,7 @@
             },
             "externalAffiliation": {
               "mandatory": false,
-              "value_type":"array",
+              "value_type": "string",
               "source":"user",
               "display": [
                 {
@@ -141,7 +141,7 @@
             },
             "entitlements": {
               "mandatory": false,
-              "value_type":"array",
+              "value_type": "string",
               "source":"user",
               "display": [
                 {
@@ -151,7 +151,7 @@
             },
             "assurance": {
               "mandatory": true,
-              "value_type":"array",
+              "value_type": "string",
               "source":"user",
               "display": [
                 {

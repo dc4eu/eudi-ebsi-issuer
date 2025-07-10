@@ -56,17 +56,19 @@
               "display": [
                 {
                   "name": "Verifiable AllianceID",
-                  "locale": "en"            }
+                  "locale": "en"
+		}
               ]
             },
             "identifier": {
               "mandatory": true,
-              "value_type":"array",
+              "value_type":"string",
               "source":"user",
               "display": [
                 {
                   "name": "Verifiable Educational ID identifier. The format of the input should be an array of the form [(identifier_sheme_id,identifier_value,identifier_id),(identifier_sheme_id,identifier_value,identifier_id)...] Where identifier_sheme_id defines the schema used to define alternative identification, the identifier_value defines the alternative identification value and the identifier_id is the URI of the identifier. THe first two values are required.",
-                  "locale": "en"            }
+                  "locale": "en"
+		}
               ]
             }
           }

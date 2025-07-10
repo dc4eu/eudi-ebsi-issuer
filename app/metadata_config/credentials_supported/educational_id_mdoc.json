@@ -56,7 +56,8 @@
               "display": [
                 {
                   "name": "Educational ID",
-                  "locale": "en"            }
+                  "locale": "en"
+		}
               ]
             },
             "identifier": {
@@ -66,17 +67,19 @@
               "display": [
                 {
                   "name": "Educational ID identifier",
-                  "locale": "en"            }
+                  "locale": "en"
+		}
               ]
             },
             "schacPersonalUniqueCode": {
               "mandatory": false,
-              "value_type":"array",
+              "value_type":"string",
               "source":"user",
               "display": [
                 {
                   "name": "schacPersonalUniqueCode can have different forms urn:schac:personalUniqueCode:int:esi:<sHO>:<code> (where <sHO> is the Higher Education Institution's schacHomeOrganization) and urn:schac:personalUniqueCode:int:esi:<country-code>:<code> (<code> is a string that uniquely identifies the person).",
-                  "locale": "en"            }
+                  "locale": "en"
+		}
               ]
             },
             "schacPersonalUniqueID": {
@@ -86,7 +89,8 @@
               "display": [
                 {
                   "name": "value is different in different countries, mostly urn:schac:personalUniqueID:<country-code>:<code>.",
-                  "locale": "en"            }
+                  "locale": "en"
+		}
               ]
             },
             "schacHomeOrganization": {
@@ -96,7 +100,8 @@
               "display": [
                 {
                   "name": "Educational institution name",
-                  "locale": "en"            }
+                  "locale": "en"
+		}
               ]
             },
             "family_name": {
@@ -106,7 +111,8 @@
               "display": [
                 {
                   "name": "Family Name",
-                  "locale": "en"            }
+                  "locale": "en"
+		}
               ]
             },
             "displayName": {
@@ -116,7 +122,8 @@
               "display": [
                 {
                   "name": "Preferred name to display",
-                  "locale": "en"            }
+                  "locale": "en"
+		}
               ]
             },
             "dateOfBirth": {
@@ -137,7 +144,8 @@
               "display": [
                 {
                   "name": "Birth names of the person",
-                  "locale": "en"            }
+                  "locale": "en"
+		}
               ]
             },
             "mail": {
@@ -147,7 +155,8 @@
               "display": [
                 {
                   "name": "User's email address",
-                  "locale": "en"            }
+                  "locale": "en"
+		}
               ]
             },
             "eduPersonPrincipalName": {
@@ -157,7 +166,8 @@
               "display": [
                 {
                   "name": "A persistent identifier within the institution",
-                  "locale": "en"            }
+                  "locale": "en"
+		}
               ]
             },
             "eduPersonPrimaryAffiliation": {
@@ -167,37 +177,41 @@
               "display": [
                 {
                   "name": "Main role at the institution",
-                  "locale": "en"            }
+                  "locale": "en"
+		}
               ]
             },
             "eduPersonAffiliation": {
               "mandatory": false,
-              "value_type":"array",
+              "value_type":"string",
               "source":"user",
               "display": [
                 {
                   "name": "List of all roles (student, staff, etc.)",
-                  "locale": "en"            }
+                  "locale": "en"
+		}
               ]
             },
             "eduPersonScopedAffiliation": {
               "mandatory": true,
-              "value_type":"array",
+              "value_type":"string",
               "source":"user",
               "display": [
                 {
                   "name": "Roles with institutional context",
-                  "locale": "en"            }
+                  "locale": "en"
+		}
               ]
             },
             "eduPersonAssurance": {
               "mandatory": false,
-              "value_type":"array",
+              "value_type":"string",
               "source":"user",
               "display": [
                 {
                   "name": "Identity assurance levels meeting REFEDS framework standards",
-                  "locale": "en"            }
+                  "locale": "en"
+		}
               ]
             }
           }
