@@ -39,11 +39,11 @@
         },
         "display": [
           {
-            "name": "MyAcademicId",
+            "name": "MyAcademicID",
             "locale": "en",
             "logo": {
               "uri": "https://examplestate.com/public/my_academic_ID.png",
-              "alt_text": "A square figure of a MyAcademicId"
+              "alt_text": "A square figure of a MyAcademicID"
             }
           }
         ],
@@ -55,7 +55,7 @@
               "source":"user",
               "display": [
                 {
-                  "name": "MyAcademicId",
+                  "name": "MyAcademicID",
                   "locale": "en"            }
               ]
             },
